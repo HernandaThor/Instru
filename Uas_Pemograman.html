@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peminatan Instrumentasi - Hernanda Thoriq Hermansyah</title>
+    <meta name="description" content="Website tentang peminatan instrumentasi oleh Hernanda Thoriq Hermansyah">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3b82f6",
+                        secondary: "#1e40af",
+                        dark: "#1e293b",
+                        light: "#f8fafc"
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-primary">Instrumentasi</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-secondary transition">Tentang Saya</a>
+                    <a href="#instrumentation" class="hover:text-secondary transition">Apa Itu Instrumentasi?</a>
+                    <a href="#topics" class="hover:text-secondary transition">Materi</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <a href="#about" class="block py-2 hover:text-secondary transition">Tentang Saya</a>
+                <a href="#instrumentation" class="block py-2 hover:text-secondary transition">Apa Itu Instrumentasi?</a>
+                <a href="#topics" class="block py-2 hover:text-secondary transition">Materi Pembelajaran</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+        <!-- Biodata Section -->
+        <section id="about" class="mb-16">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold mb-6 section-title">Biodata Penulis</h2>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3 flex justify-center">
+                        <img src="ganteng.jpg" alt="Foto Hernanda Thoriq Hermansyah" class="rounded-full w-48 h-48 object-cover shadow-lg">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-semibold mb-4">Hernanda Thoriq Hermansyah</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="font-medium mr-2">NIM:</span>
+                                <span>11220970000043</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-medium mr-2">Peminatan:</span>
+                                <span>Instrumentasi</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-medium mr-2">Institusi:</span>
+                                <span>Universitas UIN Syarif Hidayatullah Jakarta</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-medium mr-2">Email:</span>
+                                <span>hernandathoriq@gmail.com</span>
+                            </li>
+                        </ul>
+                        <p class="mt-4 text-gray-600">
+                            Saya adalah mahasiswa yang tertarik di bidang instrumentasi dan kontrol otomatis. 
+                            Saya memiliki passion dalam mengembangkan sistem pengukuran dan kontrol untuk berbagai aplikasi sistem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instrumentation Definition Section -->
+        <section id="instrumentation" class="mb-16">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold mb-6 section-title">Apa Itu Instrumentasi?</h2>
+                <div class="prose max-w-none">
+                    <p class="mb-4">
+                        Instrumentasi adalah bidang ilmu yang mempelajari tentang pengukuran, pengendalian, dan otomatisasi 
+                        dalam berbagai sistem industri maupun penelitian. Instrumentasi menggabungkan prinsip-prinsip dari 
+                        teknik elektro, komputer, fisika, dan matematika untuk merancang sistem yang dapat mengukur, 
+                        memonitor, dan mengendalikan variabel-variabel fisik seperti suhu, tekanan, aliran, level, dan lainnya.
+                    </p>
+                    <p class="mb-4">
+                        Dalam dunia industri modern, instrumentasi memegang peranan penting dalam meningkatkan efisiensi, 
+                        keamanan, dan kualitas produksi. Sistem instrumentasi digunakan di berbagai bidang seperti:
+                    </p>
+                    <ul class="list-disc pl-6 mb-4">
+                        <li>Industri minyak dan gas</li>
+                        <li>Pembangkit listrik</li>
+                        <li>Industri kimia dan farmasi</li>
+                        <li>Sistem transportasi</li>
+                        <li>Rumah sakit dan peralatan medis</li>
+                        <li>Riset ilmiah</li>
+                    </ul>
+                    <p>
+                        Seorang ahli instrumentasi bertanggung jawab untuk merancang, mengimplementasikan, memelihara, 
+                        dan mengoptimalkan sistem pengukuran dan kontrol untuk memenuhi kebutuhan spesifik suatu proses atau industri.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section id="topics" class="mb-16">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold mb-6 section-title">Materi Pembelajaran Instrumentasi</h2>
+                <p class="mb-8">
+                    Berikut adalah beberapa materi utama yang dipelajari dalam peminatan instrumentasi:
+                </p>
+
+                <!-- Topic 1 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">1. Bahasa Pemrograman</h3>
+                    <div class="prose max-w-none">
+                        <p class="mb-4">
+                            Dalam instrumentasi, penguasaan bahasa pemrograman sangat penting untuk mengembangkan sistem kontrol dan pengukuran. 
+                            Beberapa bahasa pemrograman yang umum digunakan meliputi:
+                        </p>
+                        <ul class="list-disc pl-6 mb-4">
+                            <li>
+                                <strong>C/C++:</strong> Digunakan untuk pemrograman sistem benam (embedded systems) karena efisiensi dan kontrol hardware yang baik.
+                            </li>
+                            <li>
+                                <strong>Python:</strong> Populer untuk pengolahan data, analisis sinyal, dan prototipe cepat karena kemudahan penggunaan dan library yang kaya.
+                            </li>
+                            <li>
+                                <strong>Ladder Logic:</strong> Bahasa pemrograman khusus untuk PLC (Programmable Logic Controller) yang banyak digunakan di industri.
+                            </li>
+                            <li>
+                                <strong>MATLAB:</strong> Digunakan untuk simulasi sistem, pemrosesan sinyal, dan pengembangan algoritma kontrol.
+                            </li>
+                        </ul>
+                        <p>
+                            Selain itu, pemrograman mikrokontroler seperti Arduino dan Raspberry Pi juga menjadi bagian penting dalam instrumentasi untuk prototipe dan sistem skala kecil.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Topic 2 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">2. Sensor dan Aktuator</h3>
+                    <div class="prose max-w-none">
+                        <p class="mb-4">
+                            Sensor dan aktuator adalah komponen fundamental dalam sistem instrumentasi yang berfungsi sebagai antarmuka antara dunia fisik dan sistem kontrol.
+                        </p>
+                        <p class="mb-2 font-medium">Jenis-jenis sensor yang umum dipelajari:</p>
+                        <ul class="list-disc pl-6 mb-4">
+                            <li>
+                                <strong>Sensor Suhu:</strong> Termokopel, RTD (Resistance Temperature Detector), Termistor, Infrared
+                            </li>
+                            <li>
+                                <strong>Sensor Tekanan:</strong> Strain gauge, Piezoelektrik, Kapasitif
+                            </li>
+                            <li>
+                                <strong>Sensor Aliran:</strong> Ultrasonik, Turbin, Coriolis
+                            </li>
+                            <li>
+                                <strong>Sensor Level:</strong> Kapasitif, Ultrasonik, Radar
+                            </li>
+                            <li>
+                                <strong>Sensor Proximity:</strong> Induktif, Kapasitif, Optik
+                            </li>
+                        </ul>
+                        <p class="mb-2 font-medium">Jenis-jenis aktuator:</p>
+                        <ul class="list-disc pl-6 mb-4">
+                            <li>
+                                <strong>Motor Listrik:</strong> DC motor, Stepper motor, Servo motor
+                            </li>
+                            <li>
+                                <strong>Pneumatik/Hidrolik:</strong> Silinder, valve
+                            </li>
+                            <li>
+                                <strong>Pemanas Listrik:</strong> Heating element, Peltier
+                            </li>
+                        </ul>
+                        <p>
+                            Pemahaman tentang karakteristik sensor (akurasi, presisi, linearitas, hysteresis) dan teknik kalibrasi sangat penting dalam merancang sistem instrumentasi yang handal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Topic 3 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">3. Elektronika Lanjut</h3>
+                    <div class="prose max-w-none">
+                        <p class="mb-4">
+                            Elektronika lanjut dalam instrumentasi mencakup berbagai topik yang mendukung pengembangan sistem pengukuran dan kontrol yang presisi dan handal.
+                        </p>
+                        <p class="mb-2 font-medium">Materi yang dipelajari meliputi:</p>
+                        <ul class="list-disc pl-6 mb-4">
+                            <li>
+                                <strong>Pengkondisian Sinyal:</strong> Amplifikasi, filtering, linearisasi sinyal dari sensor
+                            </li>
+                            <li>
+                                <strong>Rangkaian Op-Amp:</strong> Inverting/non-inverting amplifier, integrator, differentiator, comparator
+                            </li>
+                            <li>
+                                <strong>Konversi Sinyal:</strong> ADC (Analog-to-Digital Converter) dan DAC (Digital-to-Analog Converter)
+                            </li>
+                            <li>
+                                <strong>Komunikasi Data:</strong> Protokol serial (UART, SPI, I2C), fieldbus (Modbus, Profibus, Foundation Fieldbus)
+                            </li>
+                            <li>
+                                <strong>Rangkaian Daya:</strong> Pengendalian motor, driver aktuator, pengaturan daya
+                            </li>
+                            <li>
+                                <strong>Desain PCB:</strong> Perancangan papan sirkuit cetak untuk sistem instrumentasi
+                            </li>
+                        </ul>
+                        <p>
+                            Pemahaman tentang noise dan teknik pengurangannya (shielding, grounding, filtering) juga menjadi bagian penting dalam elektronika instrumentasi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Topic 4 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">4. Sistem Benam (Embedded Systems)</h3>
+                    <div class="prose max-w-none">
+                        <p class="mb-4">
+                            Sistem benam adalah kombinasi antara perangkat keras dan perangkat lunak yang dirancang untuk fungsi khusus dalam sistem yang lebih besar. 
+                            Dalam instrumentasi, sistem benam banyak digunakan untuk kontrol dan akuisisi data.
+                        </p>
+                        <p class="mb-2 font-medium">Aspek-aspek yang dipelajari:</p>
+                        <ul class="list-disc pl-6 mb-4">
+                            <li>
+                                <strong>Arsitektur Sistem:</strong> Pemrosesan sinyal real-time, manajemen memori, antarmuka I/O
+                            </li>
+                            <li>
+                                <strong>Mikrokontroler/Mikroprosesor:</strong> ARM, AVR, PIC, dsb.
+                            </li>
+                            <li>
+                                <strong>Sistem Operasi Real-Time (RTOS):</strong> FreeRTOS, VxWorks, QNX
+                            </li>
+                            <li>
+                                <strong>Periferal:</strong> Timer, PWM, ADC, komunikasi serial
+                            </li>
+                            <li>
+                                <strong>Optimasi:</strong> Manajemen daya, ukuran kode, kinerja
+                            </li>
+                        </ul>
+                        <p class="mb-2 font-medium">Aplikasi dalam instrumentasi:</p>
+                        <ul class="list-disc pl-6 mb-4">
+                            <li>Data logger dan akuisisi data</li>
+                            <li>Sistem kontrol proses</li>
+                            <li>Peralatan pengukuran portabel</li>
+                            <li>Sistem monitoring jarak jauh</li>
+                        </ul>
+                        <p>
+                            Pemrograman sistem benam seringkali memerlukan pemahaman yang mendalam tentang arsitektur hardware dan constraint yang ada (daya, ukuran, biaya).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Topic 5 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">5. Sistem Kendali (Control Systems)</h3>
+                    <div class="prose max-w-none">
+                        <p class="mb-4">
+                            Sistem kendali adalah jantung dari banyak aplikasi instrumentasi, yang bertujuan untuk mengatur variabel proses agar mencapai nilai yang diinginkan (set point).
+                        </p>
+                        <p class="mb-2 font-medium">Jenis sistem kendali yang dipelajari:</p>
+                        <ul class="list-disc pl-6 mb-4">
+                            <li>
+                                <strong>Sistem Kendali Loop Terbuka:</strong> Output tidak mempengaruhi aksi kontrol
+                            </li>
+                            <li>
+                                <strong>Sistem Kendali Loop Tertutup:</strong> Output diukur dan dibandingkan dengan set point untuk menentukan aksi kontrol (umpan balik)
+                            </li>
+                            <li>
+                                <strong>Sistem Kendali Kontinu vs Diskrit:</strong> Berdasarkan waktu sampling
+                            </li>
+                        </ul>
+                        <p class="mb-2 font-medium">Teknik kontrol yang umum:</p>
+                        <ul class="list-disc pl-6 mb-4">
+                            <li>
+                                <strong>PID (Proportional-Integral-Derivative):</strong> Kontroler paling populer di industri
+                            </li>
+                            <li>
+                                <strong>Kontrol Logika Fuzzy:</strong> Untuk sistem non-linear atau yang model matematikanya sulit didapatkan
+                            </li>
+                            <li>
+                                <strong>Kontrol Adaptif:</strong> Parameter kontrol menyesuaikan dengan perubahan sistem
+                            </li>
+                            <li>
+                                <strong>Kontrol Prediktif:</strong> Menggunakan model proses untuk memprediksi perilaku sistem
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Peminatan Instrumentasi</h3>
+                    <p class="max-w-xs">
+                        Website ini dibuat sebagai bagian dari pembelajaran dalam bidang instrumentasi dan kontrol.
+                    </p>
+                </div>
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Kontak</h3>
+                    <ul class="space-y-2">
+                        <li>Email: hernandathoriq@gmail.com</li>
+                        <li>Telepon: +62 815 8556 2090</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tautan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-primary transition">Tentang Saya</a></li>
+                        <li><a href="#instrumentation" class="hover:text-primary transition">Apa Itu Instrumentasi?</a></li>
+                        <li><a href="#topics" class="hover:text-primary transition">Materi Pembelajaran</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Hernanda Thoriq Hermansyah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
